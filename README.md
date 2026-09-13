@@ -1,14 +1,6 @@
 # Open-Source Toolkit — Self-Hosted / Clone-Based Repos
 ### ריפוזיטוריז בקוד פתוח (ייעוץ, אוטומציה, AI)
 
-רשימה זו כוללת **רק** פרויקטים שמצריכים `git clone` / הורדה / פריסת Docker כדי להשתמש בהם.
-פרויקטים שזמינים בהתקנה מהירה (`pip install` / `npm install` / `npx` וכו') **אינם** בטבלאות הראשיות —
-הם מרוכזים בנפרד בסוף המסמך תחת [Quick-Install](#quick-install).
-
-**עמודת "פריסה" (Deploy):**
-`Clone` = בנייה/הרצה מתוך שיבוט הריפו · `Docker` = פריסה עצמית עם Docker/Compose · `Download` = הורדת בינארי/אפליקציה · `SDK` = הורדת ערכת פיתוח.
-
----
 
 ## 📋 טבלת סיכום / Summary
 

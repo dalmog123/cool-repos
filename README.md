@@ -1,172 +1,323 @@
-# Open-Source Toolkit — Self-Hosted / Clone-Based Repos
+<div align="center">
 
+# 🧰 Open-Source Toolkit
 
-## 📋 טבלת סיכום / Summary
+### Self-Hosted & Clone-Based Solutions for Professional Services
 
-| # | קטגוריה / Category | ריפוז | מה זה נותן |
-|---|---|:---:|---|
-| 1 | [ניהול ידע / Knowledge Management](#sec-knowledge) | 7 | ויקי, בסיסי ידע, מחקר ותיעוד |
-| 2 | [פרודוקטיביות / Productivity Apps](#sec-productivity) | 4 | חלופות Notion/Miro, לוחות לבנים, מצגות |
-| 3 | [כלי פיתוח / Development Tools](#sec-dev-tools) | 3 | SDK, vector DB, מנוע חיפוש |
-| 4 | [סוכני AI ואוטומציה / Agents, Automation & MCP](#sec-agents) | 7 | פלטפורמות סוכנים, workflows, MCP |
-| 5 | [סוכני קוד / Coding Agents](#sec-coding) | 3 | סקילז ותשתיות לסוכני קוד |
-| 6 | [וידאו ומדיה / Video & Media](#sec-video) | 6 | עריכה, הקלטת מסך, תמלול |
-| 7 | [מכירות ו-CRM / Sales & CRM](#sec-sales) | 6 | CRM, תזמון, קמפייני מייל |
-| 8 | [רשתות ושיווק / Social & Marketing](#sec-social) | 3 | תזמון רשתות, אימייל שיווקי |
+A curated collection of open-source repositories that can be evaluated, self-hosted, extended, or integrated into an enterprise environment.
 
-> **סה"כ 39 ריפוז בטבלאות הראשיות** + 13 שסומנו כ-Quick-Install בסוף.
+**Focus areas:** Knowledge Management · AI & Agents · Automation · Development · Collaboration · Media · CRM · Marketing
+
+</div>
 
 ---
 
-<a id="sec-knowledge"></a>
-## 1 · 🧠 Knowledge Management / ניהול ידע
+## 📋 Repository Overview
 
-| Repo | תיאור | פריסה |
-|---|---|---|
-| [Docmost](https://github.com/docmost/docmost) | ויקי ומרכז מסמכים שיתופי (חלופה ל-Confluence/Notion), עם עריכה בזמן אמת, הרשאות וסביבות עבודה (spaces). מתאים לבסיס ידע פנימי או ללקוחות. | Docker |
-| [Wiki.js](https://github.com/requarks/wiki) | מנוע ויקי מודרני מבוסס Node.js עם עורך Markdown/WYSIWYG, ניהול הרשאות ואימות ארגוני (SSO). | Docker |
-| [Trilium (TriliumNext)](https://github.com/TriliumNext/Notes) | אפליקציית רישום היררכית לבניית בסיסי ידע אישיים/צוותיים גדולים, עם קישורים דו-כיווניים, Web Clipper וסקריפטים. | Clone / Docker |
-| [Outline](https://github.com/outline/outline) | בסיס ידע וויקי לצוותים עם עריכה מהירה ונקייה, חיפוש חזק ואינטגרציות (Slack ועוד). מצוין לנהלים ו-Onboarding. | Docker |
-| [SiYuan](https://github.com/siyuan-note/siyuan) | מערכת ניהול ידע (PKM) מבוססת בלוקים, local-first, עם Markdown/WYSIWYG וקישוריות דו-כיוונית. דגש על פרטיות. | Docker |
-| [Memos](https://github.com/usememos/memos) | מערכת קלה ומהירה ל-Quick Capture של רעיונות, לינקים ולוגים, עם Markdown, תגיות וחיפוש. שכבת ידע קלת-משקל. | Docker |
-| [Karakeep](https://github.com/karakeep-app/karakeep) | מערכת Self-Hosted לשמירת לינקים, notes ותמונות עם תיוג אוטומטי מבוסס AI וחיפוש חכם — מצוינת כמאגר Research. | Docker |
+| # | Category                                                                | Repos | Focus                                                 |
+| - | ----------------------------------------------------------------------- | :---: | ----------------------------------------------------- |
+| 1 | [🧠 Knowledge Management](#1--knowledge-management)                     |   7   | Wikis, knowledge bases, research & documentation      |
+| 2 | [🗂️ Productivity & Collaboration](#2--productivity--collaboration)     |   4   | Notion/Miro alternatives, whiteboards & presentations |
+| 3 | [🛠️ Development Tools](#3--development-tools)                          |   3   | SDKs, vector databases & search                       |
+| 4 | [🤖 AI Agents, Automation & MCP](#4--ai-agents-automation--mcp)         |   7   | Agents, workflows, automation & MCP                   |
+| 5 | [💻 Coding Agents & AI Dev Skills](#5--coding-agents--ai-dev-skills)    |   3   | Coding agents, skills & development infrastructure    |
+| 6 | [🎬 Video, Media & Screen Recording](#6--video-media--screen-recording) |   6   | Video editing, recording & transcription              |
+| 7 | [📞 Sales, CRM & Outreach](#7--sales-crm--outreach)                     |   6   | CRM, scheduling & email campaigns                     |
+| 8 | [📣 Social Media & Marketing](#8--social-media--marketing)              |   3   | Social scheduling & email marketing                   |
 
-<a id="sec-productivity"></a>
-## 2 · 🗂️ Productivity & Collaboration / פרודוקטיביות ושיתוף
-
-| Repo | תיאור | פריסה |
-|---|---|---|
-| [AppFlowy](https://github.com/AppFlowy-IO/AppFlowy) | חלופת קוד-פתוח ל-Notion — מסמכים, בסיסי נתונים ולוחות משימות ויכולות AI. בנויה ב-Flutter/Rust, עם דגש על פרטיות. | Clone / Download |
-| [AFFiNE](https://github.com/toeverything/AFFiNE) | סביבת עבודה "הכל-באחד" המשלבת מסמכים, לוח לבן (whiteboard) ובסיסי נתונים — חלופה ל-Notion+Miro. Local-first. | Docker |
-| [Excalidraw](https://github.com/excalidraw/excalidraw) | לוח לבן וירטואלי לסקיצות, דיאגרמות ותרשימי ארכיטקטורה בסגנון כתב-יד. מצוין לסדנאות ואפיון פתרונות בייעוץ. | Docker |
-| [Presenton](https://github.com/presenton/presenton) | מחולל מצגות מבוסס AI (חלופה ל-Gamma/Beautiful AI) עם ייצוא PPTX/PDF, תבניות משלכם, BYOK ו-MCP מובנה. | Docker / Download |
-
-<a id="sec-dev-tools"></a>
-## 3 · 🛠️ Development Tools / כלי פיתוח
-
-| Repo | תיאור | פריסה |
-|---|---|---|
-| [Flutter](https://github.com/flutter/flutter) | ה-SDK של גוגל לבניית אפליקציות חוצות-פלטפורמה (מובייל, ווב, דסקטופ) מקוד יחיד. נפרס דרך הורדת/שיבוט ה-SDK. | SDK / Clone |
-| [Qdrant](https://github.com/qdrant/qdrant) | מסד נתונים וקטורי (vector DB) בביצועים גבוהים — בסיס לחיפוש סמנטי ולמערכות RAG. | Docker / Clone |
-| [SearXNG](https://github.com/searxng/searxng) | מנוע מטא-חיפוש בניהול עצמי ושומר פרטיות, שמאגד תוצאות ממקורות רבים. שכבת חיפוש נוחה לסוכני AI ולמחקר. | Docker |
-
-<a id="sec-agents"></a>
-## 4 · 🤖 AI Agents, Automation & MCP / סוכני AI, אוטומציה ו-MCP
-
-| Repo | תיאור | פריסה |
-|---|---|---|
-| [n8n](https://github.com/n8n-io/n8n) | פלטפורמת אוטומציה ו-workflows חזותית עם מאות אינטגרציות ותמיכה ב-AI/סוכנים. מומלץ לפרוס עצמית ב-Docker.¹ | Docker |
-| [Activepieces](https://github.com/activepieces/activepieces) | כלי אוטומציה בקוד פתוח (חלופה ל-Zapier) עם תמיכה מובנית ב-MCP ובסוכני AI. | Docker |
-| [Dify](https://github.com/langgenius/dify) | פלטפורמה לבניית אפליקציות LLM וסוכני AI — RAG, workflows וכלים — עם ממשק ויזואלי (גם ללא מפתחים). | Docker |
-| [LibreChat](https://github.com/danny-avila/LibreChat) | ממשק צ'אט בסגנון ChatGPT התומך במודלים מרובים, סוכנים, כלים ו-MCP. פריסה עצמית מאובטחת לארגון. | Docker |
-| [AnythingLLM](https://github.com/Mintplex-Labs/anything-llm) | אפליקציית "הכל-באחד" להרצת צ'אט/RAG על המסמכים שלכם, עם סוכנים וכלים. אפליקציית דסקטופ או Docker. | Docker / Download |
-| [Firecrawl](https://github.com/mendableai/firecrawl) | כלי scraping/crawling שממיר אתרים ל-Markdown/JSON מוכן ל-LLM. ניתן לפרוס עצמית כשכבת קלט לסוכנים ולמחקר.¹ | Docker |
-| [MCP Servers](https://github.com/modelcontextprotocol/servers) | המונורפו הרשמי של שרתי MCP לדוגמה ולעיון (Anthropic/הקהילה). מקור מצוין ללמידה ולהתאמת שרתי MCP משלכם. | Clone |
-
-<a id="sec-coding"></a>
-## 5 · 💻 Coding Agents & AI Dev Skills / סוכני קוד וכלי פיתוח AI
-
-| Repo | תיאור | פריסה |
-|---|---|---|
-| [gstack](https://github.com/garrytan/gstack) | אוסף "סקילז" ל-Claude Code שהופך אותו ל"צוות הנדסה" וירטואלי (מנהל, מעצב, מבקר קוד, QA, אבטחה ועוד). | Clone |
-| [ponytail](https://github.com/DietrichGebert/ponytail) | כלל/סקיל לסוכני קוד שמכריח פתרונות מינימליים ("הסניור העצלן") — פחות קוד, זול ומהיר יותר. נטען מ-checkout לסוכנים כמו OpenCode. | Clone |
-| [OpenHands](https://github.com/All-Hands-AI/OpenHands) | פלטפורמת סוכן קוד אוטונומי (לשעבר OpenDevin) שכותב, מריץ ומתקן קוד. מורצת דרך Docker לשליטה מלאה. | Docker |
-
-<a id="sec-video"></a>
-## 6 · 🎬 Video, Media & Screen Recording / וידאו, מדיה והקלטת מסך
-
-| Repo | תיאור | פריסה |
-|---|---|---|
-| [OBS Studio](https://github.com/obsproject/obs-studio) | תוכנת הקלטת מסך ושידור חי (streaming) מקצועית וחינמית — תקן דה-פקטו בתעשייה. מצוינת לוובינרים והדרכות. | Download / Clone |
-| [ShareX](https://github.com/ShareX/ShareX) | כלי צילום מסך והקלטה ל-Windows עם OCR, annotation, שיתוף ואוטומציות מבוססות hotkeys. | Download / Clone |
-| [OpenCut](https://github.com/OpenCut-app/OpenCut) | עורך וידאו בקוד פתוח (חלופה ל-CapCut) לווב/דסקטופ, ללא watermark וללא מנוי. | Docker / Clone |
-| [Cap](https://github.com/CapSoftware/Cap) | חלופת קוד-פתוח ל-Loom להקלטה, עריכה ושיתוף מהיר של סרטוני מסך. אפליקציית דסקטופ + פריסה עצמית. | Download / Docker |
-| [Open Recorder](https://github.com/imbhargav5/open-recorder) | מקליט מסך, צילומי מסך ועורך קל ל-macOS (Swift+Rust) עם רקעים, זום ומסגור. | Clone |
-| [whisper.cpp](https://github.com/ggml-org/whisper.cpp) | מימוש C/C++ מהיר של מודל Whisper לתמלול דיבור, רץ מקומית ללא GPU. חלופת ה-clone ל-openai/whisper. | Clone |
-
-<a id="sec-sales"></a>
-## 7 · 📞 Sales, CRM & Outreach / מכירות, CRM ופנייה
-
-| Repo | תיאור | פריסה |
-|---|---|---|
-| [Twenty](https://github.com/twentyhq/twenty) | CRM מודרני בקוד פתוח (חלופה ל-Salesforce/HubSpot) עם מודל דאטה גמיש, pipelines ואוטומציה. | Docker |
-| [EspoCRM](https://github.com/espocrm/espocrm) | מערכת CRM מלאה ובוגרת לניהול לידים, אנשי קשר, הזדמנויות, קמפיינים ותמיכה. בסיס למערכת מכירות פנימית. | Docker / Clone |
-| [Cal.com](https://github.com/calcom/cal.com) | תשתית תזמון פגישות בקוד פתוח (חלופה ל-Calendly) — מצוינת לתיאום שיחות חמות/דמו. | Docker |
-| [Chatwoot](https://github.com/chatwoot/chatwoot) | מרכז שיחות רב-ערוצי (צ'אט חי, מייל, WhatsApp, טלגרם) לשירות ומכירות. חלופת קוד-פתוח ל-Intercom. | Docker |
-| [Listmonk](https://github.com/knadh/listmonk) | מנהל רשימות תפוצה וקמפייני אימייל בביצועים גבוהים (binary יחיד ב-Go). חלופה ל-Mailchimp. | Docker / Clone |
-| [Mautic](https://github.com/mautic/mautic) | פלטפורמת אוטומציית שיווק בוגרת — קמפייני מייל, ניקוד לידים, דפי נחיתה ורצפי nurture. | Docker / Clone |
-
-<a id="sec-social"></a>
-## 8 · 📣 Social Media & Marketing / רשתות חברתיות ושיווק
-
-| Repo | תיאור | פריסה |
-|---|---|---|
-| [Postiz](https://github.com/gitroomhq/postiz-app) | תזמון וניהול רשתות חברתיות עם יכולות AI (חלופה ל-Buffer). עשרות פלטפורמות, ניתוחים ו-API לאוטומציה. | Docker |
-| [Mixpost](https://github.com/inovector/mixpost) | פלטפורמת ניהול רשתות חברתיות בניהול עצמי (חלופה ל-Buffer) מבוססת Laravel — תזמון, פרסום וניתוח, ללא מנוי. | Docker / Clone |
-| [Keila](https://github.com/pentacent/keila) | כלי קוד-פתוח לניהול Newsletter וקמפייני אימייל בניהול עצמי (Elixir), עם חיבור לספקי SMTP שונים. | Docker / Clone |
+> **39 repositories** are included in the main categories, with an additional **13 repositories** listed under Quick Install.
 
 ---
 
-<a id="quick-install"></a>
-## ⚡ Quick-Install / לא נכללו (התקנה מהירה)
+# 1 · 🧠 Knowledge Management
 
-הריפוז הבאים **לא** נכללו בטבלאות הראשיות כי הם זמינים בהתקנה מהירה דרך מנהל חבילות (`pip`/`npm`/`pipx`/`npx`/brew) ואינם מצריכים שיבוט של הריפו. הלינק והתיאור כאן למען הנוחות.
+Solutions for building internal knowledge bases, documentation systems, research repositories, and organizational wikis.
 
-| Repo | תיאור | התקנה מהירה |
-|---|---|---|
-| [LangChain](https://github.com/langchain-ai/langchain) | פריימוורק לבניית אפליקציות מבוססות LLM ושרשראות/סוכנים. | `pip install langchain` / npm |
-| [LangGraph](https://github.com/langchain-ai/langgraph) | ספריית תזמור (orchestration) לבניית סוכנים וגרפי-מצב מבוססי LLM. | `pip install langgraph` |
-| [Agno](https://github.com/agno-agi/agno) | פריימוורק קליל לבניית סוכני AI מרובי-מודלים עם זיכרון וכלים. | `pip install agno` |
-| [browser-use](https://github.com/browser-use/browser-use) | ספרייה שמאפשרת לסוכני AI לשלוט בדפדפן ולבצע משימות ווב. | `pip install browser-use` |
-| [Whisper](https://github.com/openai/whisper) | מודל תמלול דיבור לטקסט (הכללנו במקום את **whisper.cpp** שמצריך שיבוט). | `pip install openai-whisper` |
-| [Slidev](https://github.com/slidevjs/slidev) | כלי מצגות למפתחים מבוסס Markdown ו-Vue. | `npm init slidev@latest` |
-| [OpenCode](https://github.com/sst/opencode) | סוכן קוד AI לטרמינל (חלופת קוד-פתוח ל-Claude Code). | `npm i -g opencode-ai` / brew |
-| [Strix](https://github.com/usestrix/strix) | סוכני AI אוטונומיים לבדיקות אבטחה/פנטסט של אפליקציות. | `pipx install strix-agent` |
-| [Graphify](https://github.com/Graphify-Labs/graphify) | סקיל לסוכני קוד שבונה "גרף ידע" מהקוד/מסמכים להבנה מהירה של פרויקט. | `pip install graphifyy` |
-| [HyperFrames](https://github.com/heygen-com/hyperframes) | פריימוורק ליצירת וידאו מ-HTML, בנוי לסוכני AI. | `npx skills add heygen-com/hyperframes` |
-| [Aider](https://github.com/Aider-AI/aider) | AI Pair Programmer שעובד מול codebase קיים, Git, טסטים ו-linters. | `pip install aider-chat` |
-| [Crush](https://github.com/charmbracelet/crush) | סוכן קוד לטרמינל (מבית Charm), חלופה מודרנית ל-CLI coding agents. | brew / npm / winget |
-| [Playwright](https://github.com/microsoft/playwright) | פריימוורק אוטומציה ובדיקות דפדפן (שימושי גם ל-agents). | npm / pip / .NET / Java |
+| Repository                                           | Description                                                                                                                                                                                                              | Deployment     |
+| ---------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | -------------- |
+| [Docmost](https://github.com/docmost/docmost)        | Collaborative wiki and document hub. An open-source alternative to Confluence/Notion with real-time editing, permissions, and workspaces. Suitable for internal knowledge bases or client-facing knowledge environments. | Docker         |
+| [Wiki.js](https://github.com/requarks/wiki)          | Modern Node.js-based wiki with Markdown/WYSIWYG editing, permissions management, and enterprise authentication/SSO capabilities.                                                                                         | Docker         |
+| [TriliumNext](https://github.com/TriliumNext/Notes)  | Hierarchical note-taking and knowledge management application designed for large personal or team knowledge bases, with bidirectional links, Web Clipper, and scripting.                                                 | Clone / Docker |
+| [Outline](https://github.com/outline/outline)        | Clean and fast team knowledge base and wiki with powerful search and integrations such as Slack. Particularly useful for procedures, documentation, and onboarding.                                                      | Docker         |
+| [SiYuan](https://github.com/siyuan-note/siyuan)      | Block-based personal knowledge management platform with a local-first architecture, Markdown/WYSIWYG editing, and bidirectional linking. Strong privacy focus.                                                           | Docker         |
+| [Memos](https://github.com/usememos/memos)           | Lightweight and fast knowledge capture platform for ideas, links, notes, and activity logs, with Markdown, tagging, and search. Useful as a lightweight knowledge layer.                                                 | Docker         |
+| [Karakeep](https://github.com/karakeep-app/karakeep) | Self-hosted system for saving links, notes, and images with AI-powered automatic tagging and intelligent search. Particularly useful as a research repository.                                                           | Docker         |
 
 ---
 
-## ⭐ מאיפה להתחיל / Recommended Starting Stack
+# 2 · 🗂️ Productivity & Collaboration
 
-אם רוצים להתחיל מקבוצה קטנה עם החזר עסקי גבוה:
+Tools for collaborative work, ideation, documentation, visual collaboration, and content creation.
 
-| עדיפות | Repo | למה |
-|:---:|---|---|
-| ⭐⭐⭐⭐⭐ | **n8n** | שכבת האוטומציה המרכזית כמעט לכל תהליך בארגון. |
-| ⭐⭐⭐⭐⭐ | **Dify** | בניית אפליקציות/סוכני AI גם לצוותים שאינם מפתחים. |
-| ⭐⭐⭐⭐⭐ | **Docmost / Outline** | בסיס ידע ארגוני, נהלים ו-Client Knowledge. |
-| ⭐⭐⭐⭐⭐ | **Twenty** | בסיס ל-CRM/מכירות פנימי או מותאם. |
-| ⭐⭐⭐⭐ | **Qdrant + Firecrawl** | תשתית RAG ו-Web Intelligence למחקר ולסוכנים. |
-| ⭐⭐⭐⭐ | **LibreChat / AnythingLLM** | ממשק AI ארגוני מאובטח מעל המודלים שלכם. |
-| ⭐⭐⭐⭐ | **Presenton** | מצגות ותוצרים ללקוחות באופן אוטומטי. |
-| ⭐⭐⭐⭐ | **Postiz + Cap** | תוכן לרשתות, הדרכות ו-Client Updates. |
+| Repository                                             | Description                                                                                                                                                                          | Deployment        |
+| ------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ----------------- |
+| [AppFlowy](https://github.com/AppFlowy-IO/AppFlowy)    | Open-source alternative to Notion with documents, databases, task boards, and AI capabilities. Built with Flutter/Rust with a strong privacy focus.                                  | Clone / Download  |
+| [AFFiNE](https://github.com/toeverything/AFFiNE)       | All-in-one workspace combining documents, whiteboards, and databases — effectively a Notion + Miro alternative. Local-first architecture.                                            | Docker            |
+| [Excalidraw](https://github.com/excalidraw/excalidraw) | Virtual whiteboard for sketches, diagrams, and architecture visualization with a hand-drawn style. Particularly useful for workshops and solution design in consulting environments. | Docker            |
+| [Presenton](https://github.com/presenton/presenton)    | AI-powered presentation generator and alternative to Gamma/Beautiful.ai, supporting PPTX/PDF export, custom templates, BYOK, and built-in MCP support.                               | Docker / Download |
 
 ---
 
-## 📝 צ'קליסט הערכה לפני אימוץ / Evaluation Checklist
+# 3 · 🛠️ Development Tools
 
-לפני הכנסת ריפו כלשהו לסביבה ארגונית, כדאי לבדוק:
+Core infrastructure and developer tools that can support internal applications, AI systems, and data-driven workflows.
 
-1. **רישיון (License)** — שימוש מסחרי והתאמות. שים לב במיוחד ל-**AGPL / BSL / Fair-Code** (למשל n8n, Firecrawl, AFFiNE, Cap, Postiz ב-AGPL).
-2. **אבטחה** — Security Policy, CVEs, סיכוני dependencies ו-Supply Chain.
-3. **Data Residency** — האם ניתן להריץ On-Prem / Private Cloud (רלוונטי מאוד לנתוני לקוחות בייעוץ).
-4. **אימות והרשאות** — SSO / SAML / OAuth / RBAC.
-5. **Extensibility** — APIs, Webhooks, Plugins, MCP.
-6. **תחזוקה** — פעילות הריפו, releases, contributors וקהילה.
-7. **מורכבות תפעולית** — כמה תשתית נדרשת בפועל להרצה ותחזוקה.
+| Repository                                    | Description                                                                                                                                                       | Deployment     |
+| --------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------- |
+| [Flutter](https://github.com/flutter/flutter) | Google's cross-platform SDK for building mobile, web, and desktop applications from a single codebase.                                                            | SDK / Clone    |
+| [Qdrant](https://github.com/qdrant/qdrant)    | High-performance vector database used as infrastructure for semantic search, embeddings, and RAG applications.                                                    | Docker / Clone |
+| [SearXNG](https://github.com/searxng/searxng) | Privacy-focused, self-hosted metasearch engine aggregating results from multiple search providers. Useful as a search layer for AI agents and research workflows. | Docker         |
 
 ---
 
-### הערות / Notes
+# 4 · 🤖 AI Agents, Automation & MCP
 
-**¹ החלטות גבוליות (Platforms):** ל-**n8n** ול-**Firecrawl** קיימת גם התקנה מהירה (npm/SDK), אך הן בטבלה הראשית כי הפריסה הארגונית שלהן היא שרת בניהול עצמי (Docker/Clone); ה-npm/SDK הם רק ה-quickstart או ה-client. אותו היגיון תקף ל-Excalidraw ול-AnythingLLM.
+Platforms and infrastructure for building AI-powered applications, autonomous agents, workflows, and tool integrations.
 
-**מהרשימה המקורית שלך שהועברו ל-Quick-Install:** `strix` (pipx), `graphify` (pip) ו-`hyperframes` (npx/npm) — ניתנים להתקנה מהירה ולכן לפי הכלל שלך אינם בטבלאות הראשיות, אבל הושארו למטה עם לינק ותיאור.
+| Repository                                                     | Description                                                                                                                                                                   | Deployment        |
+| -------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------- |
+| [n8n](https://github.com/n8n-io/n8n)                           | Visual workflow automation platform with hundreds of integrations and support for AI workflows and agents. Recommended for self-hosted enterprise deployments.¹               | Docker            |
+| [Activepieces](https://github.com/activepieces/activepieces)   | Open-source automation platform and Zapier alternative with built-in support for MCP and AI agents.                                                                           | Docker            |
+| [Dify](https://github.com/langgenius/dify)                     | Platform for building LLM applications and AI agents with RAG, workflows, tools, and a visual interface accessible to non-developers.                                         | Docker            |
+| [LibreChat](https://github.com/danny-avila/LibreChat)          | ChatGPT-style AI interface supporting multiple models, agents, tools, and MCP. Designed for self-hosted and controlled enterprise environments.                               | Docker            |
+| [AnythingLLM](https://github.com/Mintplex-Labs/anything-llm)   | All-in-one application for running AI chat and RAG over organizational documents, with support for agents and tools. Available as a desktop application or Docker deployment. | Docker / Download |
+| [Firecrawl](https://github.com/mendableai/firecrawl)           | Web scraping and crawling infrastructure that converts websites into LLM-ready Markdown/JSON. Can be self-hosted as an input layer for agents and research systems.¹          | Docker            |
+| [MCP Servers](https://github.com/modelcontextprotocol/servers) | Official repository of example MCP servers and implementations from Anthropic and the community. Useful for learning MCP and developing customized internal servers.          | Clone             |
 
-**מהקטלוג הנוסף שצירפת** נוספו לרשימה הראשית (עומדים בקריטריון clone/self-host): **Memos, EspoCRM, Keila**. פריטים משם שנשארו ב-Quick-Install כי הם package-first: **Aider** (pip), **Crush** (brew/npm), **Playwright** (npm/pip), וכן **Cline / Roo Code** (תוספי IDE) ו-**Continue** (archived) — לא נכללו.
+---
 
-**החלפה:** `openai/whisper` (pip) הוחלף ב-`whisper.cpp` (clone/build) בקטגוריית הווידאו/מדיה, כדי לשמור על כלל ה-clone.
+# 5 · 💻 Coding Agents & AI Dev Skills
+
+Repositories that extend coding agents or provide infrastructure and skills for AI-assisted software development.
+
+| Repository                                             | Description                                                                                                                                                                                                                           | Deployment |
+| ------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------- |
+| [gstack](https://github.com/garrytan/gstack)           | Collection of skills for Claude Code that turns an AI coding agent into a virtual engineering team covering roles such as engineering management, design, code review, QA, and security.                                              | Clone      |
+| [ponytail](https://github.com/DietrichGebert/ponytail) | Rule/skill for coding agents that encourages minimal solutions — effectively a "lazy senior engineer" approach designed to reduce unnecessary code, cost, and complexity. Can be loaded from a checkout into agents such as OpenCode. | Clone      |
+| [OpenHands](https://github.com/All-Hands-AI/OpenHands) | Autonomous coding-agent platform capable of writing, running, debugging, and modifying code. Designed to run through Docker for controlled deployments.                                                                               | Docker     |
+
+---
+
+# 6 · 🎬 Video, Media & Screen Recording
+
+Tools for creating training materials, client communications, demonstrations, webinars, and other visual content.
+
+| Repository                                                   | Description                                                                                                                                                | Deployment        |
+| ------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------- |
+| [OBS Studio](https://github.com/obsproject/obs-studio)       | Professional and free screen recording and live-streaming software. A de facto industry standard for webinars, demonstrations, and training.               | Download / Clone  |
+| [ShareX](https://github.com/ShareX/ShareX)                   | Windows screenshot and screen-recording utility with OCR, annotation, sharing, and hotkey-based automation capabilities.                                   | Download / Clone  |
+| [OpenCut](https://github.com/OpenCut-app/OpenCut)            | Open-source video editor positioned as a CapCut alternative for web/desktop, without watermarks or subscriptions.                                          | Docker / Clone    |
+| [Cap](https://github.com/CapSoftware/Cap)                    | Open-source Loom alternative for quickly recording, editing, and sharing screen recordings. Available as a desktop application and self-hosted deployment. | Download / Docker |
+| [Open Recorder](https://github.com/imbhargav5/open-recorder) | Lightweight macOS screen recorder, screenshot tool, and editor built with Swift and Rust, supporting backgrounds, zoom, and framing.                       | Clone             |
+| [whisper.cpp](https://github.com/ggml-org/whisper.cpp)       | Fast C/C++ implementation of Whisper for local speech-to-text transcription, capable of running locally without requiring a GPU.                           | Clone             |
+
+---
+
+# 7 · 📞 Sales, CRM & Outreach
+
+Open-source infrastructure for customer relationship management, sales operations, scheduling, customer communication, and outreach.
+
+| Repository                                       | Description                                                                                                                                                         | Deployment     |
+| ------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------- |
+| [Twenty](https://github.com/twentyhq/twenty)     | Modern open-source CRM and Salesforce/HubSpot alternative with a flexible data model, pipelines, and automation.                                                    | Docker         |
+| [EspoCRM](https://github.com/espocrm/espocrm)    | Mature full-featured CRM for managing leads, contacts, opportunities, campaigns, and support. Can serve as a foundation for an internal or customized sales system. | Docker / Clone |
+| [Cal.com](https://github.com/calcom/cal.com)     | Open-source scheduling infrastructure and Calendly alternative for coordinating meetings, discovery calls, and demos.                                               | Docker         |
+| [Chatwoot](https://github.com/chatwoot/chatwoot) | Omnichannel communication platform supporting live chat, email, WhatsApp, Telegram, and other channels. Open-source alternative to Intercom.                        | Docker         |
+| [Listmonk](https://github.com/knadh/listmonk)    | High-performance mailing-list and email campaign manager implemented as a single Go binary. Open-source Mailchimp alternative.                                      | Docker / Clone |
+| [Mautic](https://github.com/mautic/mautic)       | Mature marketing automation platform supporting email campaigns, lead scoring, landing pages, and nurture sequences.                                                | Docker / Clone |
+
+---
+
+# 8 · 📣 Social Media & Marketing
+
+Tools for managing social channels, publishing content, newsletters, and marketing communications.
+
+| Repository                                        | Description                                                                                                                                                   | Deployment     |
+| ------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------- |
+| [Postiz](https://github.com/gitroomhq/postiz-app) | Social media management and scheduling platform with AI capabilities. Buffer alternative supporting numerous platforms, analytics, and an API for automation. | Docker         |
+| [Mixpost](https://github.com/inovector/mixpost)   | Self-hosted social media management platform built with Laravel. Supports scheduling, publishing, and analytics without a subscription.                       | Docker / Clone |
+| [Keila](https://github.com/pentacent/keila)       | Open-source, self-hosted newsletter and email campaign platform built with Elixir, supporting multiple SMTP providers.                                        | Docker / Clone |
+
+---
+
+# ⚡ Quick Install
+
+The following repositories are **not included in the main tables** because they are primarily consumed through package managers or CLI installation rather than requiring the repository itself to be cloned or self-hosted.
+
+They are still listed here for convenience.
+
+| Repository                                                | Description                                                                                                         | Quick Install                           |
+| --------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- | --------------------------------------- |
+| [LangChain](https://github.com/langchain-ai/langchain)    | Framework for building LLM applications, chains, and AI agents.                                                     | `pip install langchain` / npm           |
+| [LangGraph](https://github.com/langchain-ai/langgraph)    | Agent orchestration framework for building stateful, graph-based LLM applications and agents.                       | `pip install langgraph`                 |
+| [Agno](https://github.com/agno-agi/agno)                  | Lightweight framework for building multi-model AI agents with memory and tools.                                     | `pip install agno`                      |
+| [browser-use](https://github.com/browser-use/browser-use) | Library enabling AI agents to control browsers and perform web-based tasks.                                         | `pip install browser-use`               |
+| [Whisper](https://github.com/openai/whisper)              | Speech-to-text transcription model. The main list uses `whisper.cpp` instead because it is clone/build oriented.    | `pip install openai-whisper`            |
+| [Slidev](https://github.com/slidevjs/slidev)              | Developer-focused presentation framework based on Markdown and Vue.                                                 | `npm init slidev@latest`                |
+| [OpenCode](https://github.com/sst/opencode)               | Open-source terminal-based AI coding agent and Claude Code alternative.                                             | `npm i -g opencode-ai` / brew           |
+| [Strix](https://github.com/usestrix/strix)                | Autonomous AI agents for application security testing and penetration testing workflows.                            | `pipx install strix-agent`              |
+| [Graphify](https://github.com/Graphify-Labs/graphify)     | Skill for coding agents that builds a knowledge graph from code and documentation to improve project understanding. | `pip install graphifyy`                 |
+| [HyperFrames](https://github.com/heygen-com/hyperframes)  | Framework for creating video from HTML, designed for AI-agent workflows.                                            | `npx skills add heygen-com/hyperframes` |
+| [Aider](https://github.com/Aider-AI/aider)                | AI pair-programming tool that works with existing codebases, Git, tests, and linters.                               | `pip install aider-chat`                |
+| [Crush](https://github.com/charmbracelet/crush)           | Terminal-based AI coding agent from Charm.                                                                          | brew / npm / winget                     |
+| [Playwright](https://github.com/microsoft/playwright)     | Browser automation and testing framework useful for both traditional automation and AI agents.                      | npm / pip / .NET / Java                 |
+
+---
+
+# ⭐ Recommended Starting Stack
+
+For an initial deployment, these repositories provide a strong combination of **automation, AI, knowledge management, customer operations, and content creation**.
+
+| Priority | Repository                  | Why                                                                                         |
+| :------: | --------------------------- | ------------------------------------------------------------------------------------------- |
+|   ⭐⭐⭐⭐⭐  | **n8n**                     | Core automation layer applicable to a wide range of organizational processes.               |
+|   ⭐⭐⭐⭐⭐  | **Dify**                    | Enables teams to build AI applications and agents with limited development effort.          |
+|   ⭐⭐⭐⭐⭐  | **Docmost / Outline**       | Strong foundation for organizational knowledge, procedures, and client knowledge.           |
+|   ⭐⭐⭐⭐⭐  | **Twenty**                  | Flexible foundation for internal or customized CRM and sales workflows.                     |
+|   ⭐⭐⭐⭐   | **Qdrant + Firecrawl**      | Infrastructure for RAG, semantic search, web intelligence, and research agents.             |
+|   ⭐⭐⭐⭐   | **LibreChat / AnythingLLM** | Enterprise-oriented AI interfaces for interacting with organizational models and knowledge. |
+|   ⭐⭐⭐⭐   | **Presenton**               | Automates presentation creation and client-facing deliverables.                             |
+|   ⭐⭐⭐⭐   | **Postiz + Cap**            | Supports social content, training materials, and client communications.                     |
+
+---
+
+# 📝 Evaluation Checklist
+
+Before adopting any repository into an enterprise environment, evaluate the following:
+
+### 1. License
+
+Confirm that the license permits:
+
+* Commercial use
+* Internal deployment
+* Modification
+* Redistribution where relevant
+
+Pay particular attention to **AGPL, BSL, and Fair-Code** licensing models.
+
+Examples include repositories such as n8n, Firecrawl, AFFiNE, Cap, and Postiz.
+
+### 2. Security
+
+Review:
+
+* Security policy
+* Known CVEs
+* Dependency vulnerabilities
+* Container security
+* Secrets management
+* Supply-chain risks
+* Authentication implementation
+
+### 3. Data Residency & Deployment
+
+Determine whether the solution can operate:
+
+* On-premises
+* In a private cloud
+* Within an approved enterprise environment
+* Without sending sensitive client data to third-party services
+
+This is particularly important for professional-services organizations handling confidential client information.
+
+### 4. Authentication & Authorization
+
+Evaluate support for:
+
+* SSO
+* SAML
+* OAuth/OIDC
+* RBAC
+* SCIM
+* Enterprise identity providers
+
+### 5. Extensibility
+
+Assess available:
+
+* APIs
+* Webhooks
+* Plugins
+* SDKs
+* MCP support
+* Custom integrations
+* Database access
+
+### 6. Maintenance & Community
+
+Review:
+
+* Commit activity
+* Release frequency
+* Number of active contributors
+* Issue resolution
+* Community size
+* Documentation quality
+* Project governance
+
+### 7. Operational Complexity
+
+Estimate the actual infrastructure and operational requirements:
+
+* Number of services
+* Databases
+* Redis/queues
+* Storage
+* GPU requirements
+* Reverse proxy
+* Monitoring
+* Backup requirements
+* Upgrade complexity
+
+---
+
+# 📌 Notes
+
+### ¹ Platform Classification
+
+**n8n** and **Firecrawl** also have package/SDK installation options, but they remain in the main tables because their enterprise use case commonly involves running the platform as a self-hosted service using Docker or a cloned deployment.
+
+The same principle applies to **Excalidraw** and **AnythingLLM**.
+
+### Quick-Install Classification
+
+From the original repository list, the following were moved to Quick Install because they are primarily package/CLI-based:
+
+* `strix` — pipx
+* `graphify` — pip
+* `hyperframes` — npx/npm
+
+They remain listed for reference rather than being removed.
+
+### Additional Repositories
+
+The following repositories were added to the main catalog because they meet the clone/self-hosting criteria:
+
+* **Memos**
+* **EspoCRM**
+* **Keila**
+
+The following remained in Quick Install because they are primarily package-first tools:
+
+* **Aider** — pip
+* **Crush** — brew/npm
+* **Playwright** — npm/pip
+* **Cline / Roo Code** — IDE extensions
+* **Continue** — archived
+
+### Whisper
+
+`openai/whisper` was replaced in the main list by **whisper.cpp**, since the latter better fits the clone/build-oriented criteria used for the main repository catalog.
+
+---
+
+<div align="center">
+
+## 🚀 Purpose
+
+This repository is intended as a **starting point for evaluating open-source technology that can be adopted, self-hosted, customized, or integrated into professional-services workflows**.
+
+**Explore → Evaluate → Pilot → Secure → Integrate**
+
+</div>

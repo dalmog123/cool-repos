@@ -1,5 +1,4 @@
 # Open-Source Toolkit — Self-Hosted / Clone-Based Repos
-### ריפוזיטוריז בקוד פתוח (ייעוץ, אוטומציה, AI)
 
 
 ## 📋 טבלת סיכום / Summary
